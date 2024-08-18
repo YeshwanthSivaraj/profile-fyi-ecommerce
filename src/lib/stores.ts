@@ -12,7 +12,6 @@ export interface CartItem {
 export const cartItemsStore = writable(getStorePersistance('profileFyiStore'));
 
 cartItemsStore.subscribe((val) => {
-	console.log('val: ', val);
 	if (browser) {
 		localStorage.setItem('profileFyiStore', JSON.stringify(val));
 	}
@@ -24,8 +23,6 @@ function getStorePersistance(key: string): CartItem[] {
 	}
 
 	const itemsStored: CartItem[] = JSON.parse(localStorage.getItem(key) || '{}');
-
-	console.log('items stored: ', itemsStored);
 
 	if (!itemsStored.length) {
 		return [] as CartItem[];
