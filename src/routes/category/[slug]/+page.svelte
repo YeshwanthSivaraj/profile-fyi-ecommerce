@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { PageData } from './shop/$types';
+	import type { PageData } from './$types';
 
 	import ProductItem from '$lib/ProductItem.svelte';
 	import AccordionItem from '$lib/AccordionItem.svelte';
@@ -50,7 +50,7 @@
 						title={product.title}
 						image={product.image}
 						price={product.price}
-						link={`/products/${product.title}`}
+						link={`/product/${product.title}`}
 					/>
 				{/each}
 			</div>
