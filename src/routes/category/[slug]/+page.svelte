@@ -10,6 +10,10 @@
 	$: products = data.products;
 </script>
 
+<svelte:head>
+	<title>Category | Profile fyi Ecommerce</title>
+</svelte:head>
+
 <section>
 	<div class="flex justify-center items-center gap-6 m-auto p-5 flex-wrap uppercase">
 		{#each categories as category}
