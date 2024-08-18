@@ -9,7 +9,7 @@ export interface CartItem {
 	quantity: number;
 }
 
-const cartItemsStore = writable(getStorePersistance('profileFyiStore'));
+export const cartItemsStore = writable(getStorePersistance('profileFyiStore'));
 
 cartItemsStore.subscribe((val) => {
 	console.log('val: ', val);
