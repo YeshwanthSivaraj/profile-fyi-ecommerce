@@ -97,7 +97,7 @@
 				class="w-full h-12 text-black font-bold transition-colors duration-150 bg-yellow-300 focus:shadow hover:bg-yellow-500"
 				on:click={() => handlePayment()}
 			>
-				Checkout {checkoutPrice}
+				Checkout ₹{checkoutPrice}
 			</button>
 		</div>
 	{:else}
