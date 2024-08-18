@@ -19,7 +19,7 @@
 	<div class="flex flex-col justify-start flex-grow text-center leading-tight gap-1">
 		<a href={link}>{title}</a>
 		<div class="flex justify-center gap-3">
-			<span>₹{price * 84}</span>
+			<span>₹ {Number(price * 84).toFixed(2)}</span>
 		</div>
 	</div>
 </div>

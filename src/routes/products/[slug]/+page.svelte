@@ -44,7 +44,7 @@
 	<div class="basis-1/2 flex flex-col gap-8 px-8">
 		<h1 class="font-extrabold text-4xl mt-3">{product.title}</h1>
 		<div class="flex items-end gap-2">
-			<span class="text-3xl">₹{product.price * 84}</span>
+			<span class="text-3xl">₹ {Number(product.price * 84).toFixed(2)}</span>
 		</div>
 
 		<div class="flex flex-col gap-2">
