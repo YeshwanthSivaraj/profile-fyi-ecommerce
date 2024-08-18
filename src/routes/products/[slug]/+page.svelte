@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { toast } from '@zerodevx/svelte-toast';
+
 	import ProductItem from '$lib/ProductItem.svelte';
 	import ProductQuantity from '$lib/ProductQuantity.svelte';
 	import { addToCart } from '$lib/stores';
@@ -20,6 +22,7 @@
 		};
 
 		addToCart(item);
+		toast.push('Added item to cart!', { duration: 2000 });
 	}
 </script>
 
