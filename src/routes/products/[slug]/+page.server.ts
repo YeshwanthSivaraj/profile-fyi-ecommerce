@@ -16,7 +16,7 @@ export const load = (async ({ params }) => {
 			relatedProducts
 		};
 	} catch (e) {
-		console.error(`Couldnt load page /${params.slug}`);
+		console.error(`Couldnt load page /products/${params.slug}`);
 
 		throw error(500, {
 			message: 'Couldnt load this page'

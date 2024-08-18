@@ -16,7 +16,7 @@ export const load = (async () => {
 			products
 		};
 	} catch (e) {
-		console.error('Could not load page /shop');
+		console.error('Could not load page');
 
 		throw error(500, {
 			message: 'Could not load this page'
