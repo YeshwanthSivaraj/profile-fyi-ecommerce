@@ -50,7 +50,7 @@
 						title={product.title}
 						image={product.image}
 						price={product.price}
-						link={`/products/${product.title}`}
+						link={`/products/${product.id}`}
 					/>
 				{/each}
 			</div>
