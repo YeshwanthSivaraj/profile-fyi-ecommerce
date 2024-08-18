@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { PageData } from './shop/$types';
+	import type { PageData } from './$types';
 
 	import ProductItem from '$lib/ProductItem.svelte';
 	import AccordionItem from '$lib/AccordionItem.svelte';
