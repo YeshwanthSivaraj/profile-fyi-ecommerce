@@ -2,7 +2,6 @@
 	export let title: string;
 	export let image: string;
 	export let price: number;
-	export let salePrice: number = 0;
 	export let link: string;
 </script>
 
@@ -20,12 +19,7 @@
 	<div class="flex flex-col justify-start flex-grow text-center leading-tight gap-1">
 		<a href={link}>{title}</a>
 		<div class="flex justify-center gap-3">
-			{#if salePrice === 0}
-				<span>₹{price}</span>
-			{:else}
-				<span class="text-red-600">${salePrice}</span>
-				<span class="text-gray-600 line-through">${price}</span>
-			{/if}
+			<span>₹{price}</span>
 		</div>
 	</div>
 </div>
