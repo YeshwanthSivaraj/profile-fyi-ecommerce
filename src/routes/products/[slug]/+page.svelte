@@ -1,6 +1,8 @@
 <script lang="ts">
 	import ProductItem from '$lib/ProductItem.svelte';
 	import ProductQuantity from '$lib/ProductQuantity.svelte';
+	import { addToCart } from '$lib/stores';
+	import type { CartItem } from '$lib/stores';
 
 	export let data: any;
 
@@ -8,7 +10,17 @@
 	$: relatedProducts = data.relatedProducts;
 	let quantity = 1;
 
-	function addItemToCart() {}
+	function addItemToCart() {
+		const item: CartItem = {
+			id: product.id,
+			title: product.title,
+			image: `${product.image}`,
+			price: product.price,
+			quantity: quantity
+		};
+
+		addToCart(item);
+	}
 </script>
 
 <svelte:head>
